@@ -11,7 +11,7 @@
     --cor-verde: #49a09d;
     --cor-verde-escuro: #3e8a87af;
     --cor-lilas: #8441b1;
-    --cor-lilas-escuro: #8441b1a9;
+    --cor-lilas-escuro: #432458;
 }
 
 * {
@@ -36,7 +36,7 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    
     overflow: hidden;
 
     background-color: white;
@@ -47,6 +47,7 @@ section#login {
 
     transition: width 0.3s, heigth 0.3s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 }
 
 section#login > div#imagem {
@@ -83,27 +84,25 @@ form > div.campo {
     width: 100%;
     border-radius: 5px;
     margin: 5px 0px;
-    padding: 3px;
 }
 
-form > div.campo i {
+form > div.campo > i {
     color: white;
     /*background-color: black;*/
-    font-size: 2em;
+    font-size: 1.7em;
     width: 39px;
-    padding: 5px;
+    padding: 4px 0px 5px 7px;
 }
 
 div.campo > input {
-    border: 1px solid var(--cor-lilas);
     background-color: var(--cor-verde);
     font-size: 1em;
-    width: calc(100% - 44.8px);
-    transform: translateY(-10px);
+    width: calc(100% - 43.4px);
     height: 100%;
-    border: none;
+    border: 2px solid var(--cor-lilas);
     border-radius: 8px;
     padding: 4px;
+    transform: translateY(-4px);
 }
 
 form > div.campo > input:focus-within {
@@ -127,17 +126,18 @@ form > input[type=submit]:hover {
 }
 
 form > a.botao{
-    background-color: var(--cor-verde);
+    background-color: white;
     display: block;
     width: 100%;
     height: 40px;
-    margin-top: 10px;
+    margin-top: 5px;
     padding: 2px;
     text-align: center;
     text-decoration: none;
-    color: white;
+    color: var(--cor-verde);
     border-radius: 5px;
-    font-size: 1em;   
+    font-size: 1em;
+    border: 1px solid var(--cor-verde);   
 }
 
 form > a.botao:hover {
