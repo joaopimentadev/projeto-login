@@ -9,7 +9,9 @@
 
 :root {
     --cor-verde: #49a09d;
+    --cor-verde-escuro: #3e8a87af;
     --cor-lilas: #8441b1;
+    --cor-lilas-escuro: #8441b1a9;
 }
 
 * {
@@ -68,4 +70,76 @@ div#formulario > h1 {
 
 div#formulario > p {
     font-size: 0.8em;
+}
+
+form > div.campo label {
+    display: none;
+}
+
+form > div.campo {
+    background-color: var(--cor-lilas);
+    display: block;
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    margin: 5px 0px;
+    padding: 3px;
+}
+
+form > div.campo i {
+    color: white;
+    /*background-color: black;*/
+    font-size: 2em;
+    width: 39px;
+    padding: 5px;
+}
+
+div.campo > input {
+    border: 1px solid var(--cor-lilas);
+    background-color: var(--cor-verde);
+    font-size: 1em;
+    width: calc(100% - 44.8px);
+    transform: translateY(-10px);
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+form > div.campo > input:focus-within {
+    background-color: white;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    color: white;
+    background-color: var(--cor-verde);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover {
+    background-color: var(--cor-verde-escuro);
+}
+
+form > a.botao{
+    background-color: var(--cor-verde);
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    padding: 2px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 1em;   
+}
+
+form > a.botao:hover {
+    background-color: var(--cor-verde-escuro)
 }
